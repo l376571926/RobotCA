@@ -13,7 +13,32 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
 
+        jcenter()
+        flatDir {
+            dirs 'control_app/libs'
+        }
+        maven {
+            url "https://jitpack.io"
+        }
+        maven {
+            url "https://github.com/rosjava/rosjava_mvn_repo/raw/master"
+        }
+    }
+}
+rootProject.name = "android_foo"
 /* Uncomment these and add your own packages to be gradled
 include 'my_android_project'
 include 'my_android_library_project'

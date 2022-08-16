@@ -1,21 +1,12 @@
 package com.robotca.ControlApp;
 
-import android.support.test.rule.ActivityTestRule;
-import android.support.test.runner.AndroidJUnit4;
+import androidx.test.rule.ActivityTestRule;
+import androidx.test.ext.junit.runners.AndroidJUnit4;
 
 import com.robotca.ControlApp.Core.RobotInfo;
 import com.robotca.ControlApp.Core.RobotStorage;
 
-import org.junit.Before;
-import org.junit.FixMethodOrder;
-import org.junit.Rule;
-import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.junit.runners.MethodSorters;
-
 import java.util.UUID;
-
-import static org.junit.Assert.assertEquals;
 
 /**
  * Rudimentary instrumentation test that tests adding and removing RobotInfo's int the RobotChooser Activity.

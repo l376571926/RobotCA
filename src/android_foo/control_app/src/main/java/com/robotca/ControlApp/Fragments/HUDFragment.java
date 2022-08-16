@@ -110,7 +110,7 @@ public class HUDFragment extends SimpleFragment implements MessageListener<Odome
         }
 
         // Get WifiManager
-        wifiManager = (WifiManager) getActivity().getSystemService(Context.WIFI_SERVICE);
+        wifiManager = (WifiManager) getActivity().getApplicationContext().getSystemService(Context.WIFI_SERVICE);
         
         // Find the Emergency Stop Button
         // Emergency stop button
